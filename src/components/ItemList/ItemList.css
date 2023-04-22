@@ -1,0 +1,6 @@
+.ItemList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: unset;
+    column-gap: 20px;
+    }
