@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# BIENVENIDOS AL PROYECTO ECOMMERCE GOOD MORNING (by Gaz Pardo)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
