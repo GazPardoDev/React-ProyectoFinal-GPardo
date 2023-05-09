@@ -31,13 +31,5 @@ ALCANCE DEL PROYECTO:
 - Se CONFIGURÓ LA CUENTA DE firebase para llamar la info desde la nube, con PRODUCTS y COLLECTION.
 - CHECKOUT: componente para confirmar la compra, informa sobre el proceso en curso o final, para llegar a una plataforma de pago (formulario emulado).
 
-VARIABLES DE ENTORNO:
-
-REACT_APP_apiKey=AIzaSyBw4YZ4pl6POQpJhzGA4Xc0dSyDMWTxZDE
-REACT_APP_authDomain=react-ecommerce-gpardo.firebaseapp.com
-REACT_APP_projectId=react-ecommerce-gpardo
-REACT_APP_storageBucket=react-ecommerce-gpardo.appspot.com
-REACT_APP_messagingSenderId=491011184844
-REACT_APP_appId=1:491011184844:web:139222ed334206d2670a69
 
 Gastón Pardo / React JS / Comisión 51150 / CODERHOUSE 
