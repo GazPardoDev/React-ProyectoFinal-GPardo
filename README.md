@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# BIENVENIDOS AL PROYECTO ECOMMERCE GOOD MORNING (by Gaz Pardo)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Scripts disponibles
 
-In the project directory, you can run:
+En este directorio, se puede ejecutar:
 
-### `npm start`
+Este proyecto realizado en REACT JS se basa en un sistema online E-COMMERCE de venta de artículos del rubro tecnología.
+Fue creado con la librería de JS, aplicado estilos visuales con hojas de estilo CSS.
+La estructura de la APP fue lograda de la siguiente manera:
+- NavBar (header con logo principal, botonera de navegación, acceso login y carrito de compras)
+- CartWidget (componente responsable informativo de los productos seleccionados y montos)
+- ItemListContainer (componente contenedor de los productos dispuestos en grilla –flexbox)
+- ItemList (lista de items o productos)
+- ItemDetailContainer (componente contenedor del producto o ítem y sus datos o detalles)
+- ItemDetail (contenedor de los detalles del producto)
+- ItemQuantitySelector (botón para incrementar o decrementar la cantidad de productos a comprar)
+- Description (descripción del producto)
+- AddItemButton (botón para agregar el ítem en cuestión al carrito de compras)
+- Checkout (sección para confirmar la compra y realizar un pedido)
+- Brief (detalle de compra).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ALCANCE DEL PROYECTO:
+- INICIO: se muestra la estructura visual donde interctúan los componentes y los objetos de navegación.
+- HEADER o NAV: el logotipo posee enlace al HOME o INICIO. Se presenta la botonera con 3 categorías, las cuales lleva al listado correspondiente.
+- LOGIN: se emula un fomrulario con acceso restringido de NOMBRE de USUARIO y CONTRASEÑA, el cual validaría el acceso a diferentes secciones privadas de la app.
+- CARTWIDGET: el carrito se actualiza cada vez que se agrega un producto, y muestra el total de la compra en curso (parcial o total).
+- CARTWIDGET: el carrito tiene enlace a la sección o componente CART donde lista los productos seleccionados y la info correspondiente.
+- ITEM: cada ítem tiene un TÍTULO (nombre), IMAGEN (foto del producto), DESCRIPCIÓN (texto informativo del producto), PRECIO y STOCK.
+- Se CONFIGURÓ LA CUENTA DE firebase para llamar la info desde la nube, con PRODUCTS y COLLECTION.
+- CHECKOUT: componente para confirmar la compra, informa sobre el proceso en curso o final, para llegar a una plataforma de pago (formulario emulado).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Gastón Pardo / React JS / Comisión 51150 / CODERHOUSE 
