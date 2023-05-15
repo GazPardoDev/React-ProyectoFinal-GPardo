@@ -1,22 +1,45 @@
 import './NavBar.css'
-import { Link } from 'react-router-dom'
+import { Link, useParams, NavLink } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
-import mainLogo from './main-logo.png'
-
+import logo from './main-logo.png'
+import { getCategories } from '../../services/firebase/firestore/categories'
+import { useAsync } from '../../hooks/useAsync'
 
 const NavBar = () => {
-    return(
-        <nav className="NavBar">
-            <Link to='/'> <img src={mainLogo} alt="Good Morning!"></img></Link>
-            <div>
-                <Link to='/category/televisores' className="mi-enlace">SMART TV ·</Link>
-                <Link to='/category/audio'className="mi-enlace"> SISTEMAS DE AUDIO ·</Link>
-                <Link to='/category/camaras' className="mi-enlace"> CÁMARAS DIGITALES</Link>
-            </div>
-            <Link to='/Login' className="mi-enlace">Login</Link>
-            <CartWidget />
-        </nav>
-    )
+           
+    const { categoriesId } = useParams ()
+
+    const getCategoriesWithId = () => getCategories (categoriesId)
+
+    const { data: categories, error, loading} = useAsync(getCategoriesWithId, [categoriesId])
+
+    if(loading) {
+        return <h1>Está cargando...</h1>
+    }
+
+    if(error) {
+        return <h1>Por favor, vuelva a cargar la pagina</h1>
+    }
+
+
+  return (
+    <nav className="NavBar" >
+        
+        
+        <Link to='/'><img src={logo} alt="Good Morning!" /></Link>
+        <div className="Categories">
+        {
+            categories.map(cat => {
+                return (
+                  <NavLink key={cat.id} to={`/category/${cat.slug}`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>{cat.label}</NavLink>
+                )
+              }) 
+        }
+            <CartWidget/>
+        </div>
+    </nav>
+  )
+   
 }
 
 export default NavBar

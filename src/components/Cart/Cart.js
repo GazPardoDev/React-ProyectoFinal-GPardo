@@ -27,7 +27,7 @@ const Cart = () => {
 
     return (
         <div>
-            <h1 className="carritoFinal">Cart</h1>
+            <h1 className="carritoFinal">CARRITO DE COMPRA</h1>
             <div>
                 {
                     cart.map(prod => {
@@ -38,7 +38,7 @@ const Cart = () => {
                         )
                     })
                 }
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="formularioCart">
                     <label>
                         Nombre:
                         <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} /><br/><br/><br/>
