@@ -1,3 +1,29 @@
+Proyecto Final REACT corregido y actualizado
+E-Commerce GOOD MORNING!
+
+A continuación los detalles actualizados:
+
+- Presentación: En la documentacion habria que quitar las credenciales de Firebase. Quedaria eliminar aquellos archivos generados por CRA que no se estan utilizando. (CORREGIDO, archivos eliminados y credenciales borradas en presentación)
+
+- Convenciones: Muy bien. (no se tocó)
+- Container Patterns : Muy bien (no se tocó)
+- Navegabilidad : Muy bien (no se tocó)
+
+- NavBar : Estaria muy bien traer las categorias desde firestore para evitar tener que modificar el codigo en caso de que las categorias cambien, se agreguen o se eliminen. Esto es un problema menos a futuro. (CORREGIDO: se sustituyó configuración y ahora lee datos desde Firestore)
+
+- Catálogo : Podria refactorizarse logica de firestore y reutilizar logica de componente con un custom hook. Estaria bueno utilizar un loader que inidique el cambio de estados de la promesa para mejorar la UX. Si hubiese un error y no hubiese productos el usuario no lo sabria, estaria bien mostrar una notificacion. (CORREGIDO: se configuró los Custom Hooks y ahora llama la data desde componente Products.JS)
+
+- Detalle : Podria refactorizarse logica de firestore y reutilizar logica de componente con un custom hook. Estaria bueno utilizar un loader que inidique el cambio de estados de la promesa para mejorar la UX. Si hubiese un error y no hubiese productos el usuario no lo sabria, estaria bien mostrar una notificacion. (CORREGIDO: se configuró los Custom Hooks y ahora llama la data desde componente Products.JS)
+
+- CartProvider/CartContext : Muy bien (no se tocó)
+- CartWidget : Muy bien (no se tocó)
+
+- Cart/Checkout : Podria refactorizarse la logica de firestore para quitarle responsabilidades al componente, faltaria solamente implementar el formulario para que las ordenes no se creen siempre con los mismos datos sino con los datos ingresados en el formulario. (CORREGIDO: se mejoró visualmente el formulario, y ahora genera la orden desde Firestore)
+
+- Se mejoró en general el estilo de la APP con CSS y se usó SWEETALERT2 para el checkout.
+
+________________________________________________________________________________________________________________________
+
 # BIENVENIDOS AL PROYECTO ECOMMERCE GOOD MORNING (by Gaz Pardo)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
